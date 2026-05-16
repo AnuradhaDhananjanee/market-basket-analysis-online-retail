@@ -1,0 +1,4 @@
+outputs/basket_matrix.csv
+__pycache__/
+*.pyc
+.vscode/
