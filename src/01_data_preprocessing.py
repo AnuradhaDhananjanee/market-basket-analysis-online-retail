@@ -7,7 +7,9 @@ MSc Data Science | Data Mining Assignment
 import pandas as pd
 import numpy as np
 import os
+import sys
 
+sys.stdout.reconfigure(encoding="utf-8")
 # ──────────────────────────────────────────────
 # 1. Load Data
 # ──────────────────────────────────────────────
@@ -86,7 +88,7 @@ print("  outputs/basket_matrix.csv")
 # ──────────────────────────────────────────────
 # 9. Summary Statistics
 # ──────────────────────────────────────────────
-print(f"\n── Summary ──────────────────────────────────")
+print(f"\n===== Summary =====")
 print(f"Total transactions (UK):  {df_uk['InvoiceNo'].nunique()}")
 print(f"Unique products:          {df_uk['Description'].nunique()}")
 print(f"Unique customers:         {df_uk['CustomerID'].nunique()}")
